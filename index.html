@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <header>
+    <header id="main-header">
         <h1>Jimmy Zheng</h1>
         <nav>
             <ul>
@@ -31,8 +31,11 @@
             <header class="section-header">
                 <h2>About Me</h2>
             </header>
+            <div class=section-line></div>
             <div class="section-body">
-
+                <p>
+                    I am recent graduate from Washington State University with a Bachelors in Computer Science.
+                </p>
             </div>
 
         </section>
@@ -40,49 +43,33 @@
             <header class="section-header">
                 <h2>Work</h2>
             </header>
-            <div class="section-body">
+            <div class=section-line></div>
+            <div class="section-body projects">
+                <div class="project" id="portfolio">
+                    <header>Personal Portfolio</header>
+                </div>
+                <div class="project" id="microsoft">
+                    <header>Microsoft's DCCD Charitable Giving Management App</header>
+                </div>
+                <div class="project" id="weather">
+                    <header>WeatherBook</header>
+                </div>
+
+                <a class="project" id="code-refractor" href="https://bytesizeerror.github.io/Code-Refactor/">
+                    <header>Code Refractor</header>
+                </a>
+
                 <div class="project">
                     <header>Project</header>
-                    <figure>
-                        <img src="#" alt="project image placeholder">
-                        <figcaption>Project Image</figcaption>
-                    </figure>
-                </div> 
-                <div class="project">
-                    <header>Project</header>
-                    <figure>
-                        <img src="#" alt="project image placeholder">
-                        <figcaption>Project Image</figcaption>
-                    </figure>
-                </div> 
-                <div class="project">
-                    <header>Project</header>
-                    <figure>
-                        <img src="#" alt="project image placeholder">
-                        <figcaption>Project Image</figcaption>
-                    </figure>
-                </div> 
-                <div class="project">
-                    <header>Project</header>
-                    <figure>
-                        <img src="#" alt="project image placeholder">
-                        <figcaption>Project Image</figcaption>
-                    </figure>
-                </div> 
-                <div class="project">
-                    <header>Project</header>
-                    <figure>
-                        <img src="#" alt="project image placeholder">
-                        <figcaption>Project Image</figcaption>
-                    </figure>
-                </div> 
+                </div>
             </div>
-            
+
         </section>
         <section id="contact-me">
             <header class="section-header">
                 <h2>Contact Me</h2>
             </header>
+            <div class=section-line></div>
             <div class="section-body">
 
             </div>
@@ -90,7 +77,7 @@
         </section>
     </main>
     <footer>
-    
+
     </footer>
 </body>
 
