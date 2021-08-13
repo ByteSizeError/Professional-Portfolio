@@ -4,7 +4,6 @@ header, section {
 }
 
 #main-header {
-    
     background-color:dodgerblue;
     color: white;
 }
@@ -71,16 +70,20 @@ section {
 .project {
     opacity: 50%;
     height: 25vh;
-    width: 48%;
+    width: 50%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    margin: 5px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    position: relative;
 }
 
 #portfolio {
     background-image: url("../images/sitelogo.png");
     width: 100%;
+    height: 50vh;
     background-size: contain;
 }
 #microsoft {
@@ -93,4 +96,23 @@ section {
 
 .project:hover {
     opacity: 100%;
+    border-color: dodgerblue;
+}
+
+.project-name {
+    position: absolute;
+    bottom: 0;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.contact-info {
+    display: inline-flex;
+    flex-flow: row;
+    margin: 40px 20px;
+}
+
+.contact-info:hover {
+    color: dodgerblue;
 }
