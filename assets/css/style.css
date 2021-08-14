@@ -1,11 +1,8 @@
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-h1, h2 {
-    padding: 20px;
-}
 
-section {
+h1, h2, section {
     padding: 20px;
 }
 
@@ -33,9 +30,11 @@ h2 {
     display: inline-block;
     font-size: 36px;
 }
+
 nav {
     width: 60%;
 }
+
 nav ul {
     display: flex;
     flex-direction: row;
@@ -50,7 +49,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+    color: lightsteelblue;
+    text-decoration: overline underline;
 }
 
 p {
@@ -101,6 +101,7 @@ section {
 
 #portfolio {
     background-image: url("../images/sitelogo.png");
+    background-color: lightsteelblue;
     width: 100%;
     height: 50vh;
     background-size: contain;
@@ -111,6 +112,14 @@ section {
 
 #weather {
     background-image: url("https://media.wired.co.uk/photos/606dba1c9a15f73a597a2aa1/master/w_1600%2Cc_limit/weather.jpg");
+}
+
+#code-refractor {
+    background-image: url("https://chaseinternationalpartners.com/wp-content/uploads/2020/05/jobs-social-medi.jpg");
+}
+
+#placeholder {
+    background-image: url("https://img.freepik.com/free-vector/programming-code-icon-made-with-binary-code-coding-hacker-matrix-background-with-digits-1-0_127544-1141.jpg?size=626&ext=jpg");
 }
 
 .project:hover {
