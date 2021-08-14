@@ -5,6 +5,7 @@ In this project I built my own professional porfolio showcasing my projects and 
 https://bytesizeerror.github.io/Professional-Portfolio/
 
 ## Website Demo
+![alt text](https://github.com/ByteSizeError/Professional-Portfolio/blob/main/ComputerView.png)
 
 ## Usage
 Professional portfolio for Jimmy Zheng, showing his projects and contact information.
