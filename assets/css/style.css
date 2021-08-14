@@ -1,11 +1,15 @@
+/* setting the font family for the whole page */
 * {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+/* add padding for all sections and headers */
 h1, h2, section {
     padding: 20px;
 }
 
+/* the top bar is a inline flex box that contains the header 
+and nav bar the color is set to royal blue with white text */
 #main-header {
     background-color:royalblue;
     color: white;
@@ -15,26 +19,29 @@ h1, h2, section {
     justify-content: space-between;
 }
 
+/* this is the line under the header bar for decoration */
 .header-line {
     height: 10px;
     width: 100%;
     background-color: dodgerblue;
 }
 
+/* setting the font size for h1 */
 h1 {
-    display: inline-block;
     font-size: 48px;
 }
 
+/* setting the font size for h2 */
 h2 {
-    display: inline-block;
     font-size: 36px;
 }
 
+/* the nav bar will have 60% of the header */
 nav {
     width: 60%;
 }
 
+/* the navigation links are spaced around and in a row */
 nav ul {
     display: flex;
     flex-direction: row;
@@ -42,50 +49,60 @@ nav ul {
     padding: 25px;
 }
 
+/* navigation links are white and have no text decoration */
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 30px;
 }
 
+/* the navigation links will have overline and underline when hovered on */
 nav ul li a:hover {
     color: lightsteelblue;
     text-decoration: overline underline;
 }
 
+/* the paragraph will be aligned to the right and have normal line height */
 p {
     font-size: 16px;
     text-align: left;
     line-height: normal;
 }
 
+/* all section will have a flex row display */
 section {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
+/* section header will have the 20% of the left side */
 .section-header {
     width: 20%;
     text-align: right;
 }
 
+/* line to help sepereate the section header from the body */
 .section-line {
     width: 5px;
     background: dodgerblue;
     margin-right: 15px;
 }
 
+/* the section body will have the 80% of the right side */
 .section-body {
     width: 80%;
     text-align: center;
 }
 
+/* projects will have the project in a flex box wrap container */
 .projects {
     display: inline-flex;
     flex-flow: row wrap;
 }
 
+/* projects will have a partner two in a row
+also they are dimmed until hovered on */
 .project {
     opacity: 50%;
     height: 25vh;
@@ -99,6 +116,7 @@ section {
     position: relative;
 }
 
+/* image for porfolio */
 #portfolio {
     background-image: url("../images/sitelogo.png");
     background-color: lightsteelblue;
@@ -106,27 +124,34 @@ section {
     height: 50vh;
     background-size: contain;
 }
+
+/* image for microsoft project */
 #microsoft {
     background-image: url("http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31");
 }
 
+/* image for weather book project */
 #weather {
     background-image: url("https://media.wired.co.uk/photos/606dba1c9a15f73a597a2aa1/master/w_1600%2Cc_limit/weather.jpg");
 }
 
+/* image for refractor */
 #code-refractor {
     background-image: url("https://chaseinternationalpartners.com/wp-content/uploads/2020/05/jobs-social-medi.jpg");
 }
 
+/* image for placeholder */
 #placeholder {
     background-image: url("https://img.freepik.com/free-vector/programming-code-icon-made-with-binary-code-coding-hacker-matrix-background-with-digits-1-0_127544-1141.jpg?size=626&ext=jpg");
 }
 
+/* the background becomes clear when mouse hovers and has a border around it */
 .project:hover {
     opacity: 100%;
     border-color: dodgerblue;
 }
 
+/* the name of the project is position at the left corner of the project */
 .project-name {
     position: absolute;
     bottom: 0;
@@ -136,80 +161,114 @@ section {
     padding: 20px;
 }
 
+/* contact info is a flex wrap */
 .contact {
     display: inline-flex;
     flex-flow: row wrap;
     justify-content: space-around;
 }
 
+/* contact info font size and margin */
 .contact-info {
     font-size: 16px;
     margin: 40px 10px;
 }
 
+/* the link turns blue when hovered on */
 .contact-info:hover {
     color: dodgerblue;
 }
 
+/* for screens like tablets */
 @media screen and (max-width: 1024px) {
     
+    /* project will now have a whole row to themselves */
     .project {
         width: 100%;
     }
+
+    /* giving it the whole length of the page */
     #main-header {
         width: 100%; 
         justify-content: space-around;
     }
+
+    /* decreasing the font size */
     nav ul li a {
         font-size: 30px;
     }
+
+    /* shrinking the font size of the header and moving it to the center */
     h1 {
         width: 100%;
         text-align: center;
     }
+    
+    /* shrinking the font size */
     h2 {
         font-size: 30px;
     }
+
+    /* moving the nav bar below the header */
     nav {
         background-color:dodgerblue;
         width: 100%;
     }
+
+    /* shrinkig the font size */
     nav ul li a {
         font-size: 26px;
     }
 }
 
+/* for screens like phones */
 @media screen and (max-width: 768px) {
+    /* all sections are swapped to up and down format */
     section {
         flex-direction: column;
     }
+
+    /* section header will now strech the entire section */
     .section-header {
         width: 100%;
         text-align: center;
     }
+
+    /* line will now be horizonal and go side to side */
     .section-line {
         height: 5px;
         width: auto;
         margin: 0px 15px 15px 15px;
     }
+
+    /* body will now strech the whole section width */
     .section-body {
         width: 100%;
     }
+
+    /* nav will strech the whole header */
     nav {
         width: 100%;
     }
+
+    /* the navigation links will now be on top of each other */
     nav ul {
         flex-direction: column;
         text-align: center;
     }
+
+    /* add spaced between the links */
     nav ul li {
         margin: 10px;
     }
+
+    /* make the font size readable on phone */
     nav ul li a {
         font-size: 24px;
     }
+
+    /* add space between the contact info links */
     .contact-info {
         margin: 10px;
     }
-
 }
