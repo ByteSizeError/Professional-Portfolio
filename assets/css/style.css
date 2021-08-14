@@ -1,49 +1,68 @@
-header, section {
+* {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+h1, h2 {
+    padding: 20px;
+}
+
+section {
     padding: 20px;
 }
 
 #main-header {
-    background-color:dodgerblue;
+    background-color:royalblue;
     color: white;
+    width: 100%;
+    display: inline-flex;
+    flex-flow: row wrap;   
+    justify-content: space-between;
 }
 
-header h1 {
+.header-line {
+    height: 10px;
+    width: 100%;
+    background-color: dodgerblue;
+}
+
+h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-header h2 {
+h2 {
     display: inline-block;
     font-size: 36px;
 }
-
-header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
+nav {
+    width: 60%;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 25px;
 }
 
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
-
-header nav ul li a {
+nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 30px;
 }
 
-header nav ul li a:hover {
-    color: white;
+nav ul li a:hover {
     text-decoration: underline;
-    font-size: 20px;
+}
+
+p {
+    font-size: 16px;
+    text-align: left;
+    line-height: normal;
 }
 
 section {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 .section-header {
@@ -105,14 +124,83 @@ section {
     background-color: dodgerblue;
     border-radius: 5px;
     font-size: 15px;
+    padding: 20px;
+}
+
+.contact {
+    display: inline-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .contact-info {
-    display: inline-flex;
-    flex-flow: row;
-    margin: 40px 20px;
+    font-size: 16px;
+    margin: 40px 10px;
 }
 
 .contact-info:hover {
     color: dodgerblue;
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .project {
+        width: 100%;
+    }
+    #main-header {
+        width: 100%; 
+        justify-content: space-around;
+    }
+    nav ul li a {
+        font-size: 30px;
+    }
+    h1 {
+        width: 100%;
+        text-align: center;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    nav {
+        background-color:dodgerblue;
+        width: 100%;
+    }
+    nav ul li a {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        flex-direction: column;
+    }
+    .section-header {
+        width: 100%;
+        text-align: center;
+    }
+    .section-line {
+        height: 5px;
+        width: auto;
+        margin: 0px 15px 15px 15px;
+    }
+    .section-body {
+        width: 100%;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    nav ul li a {
+        font-size: 24px;
+    }
+    .contact-info {
+        margin: 10px;
+    }
+
 }
