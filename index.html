@@ -5,11 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="loadProjects()">
     <header id="main-header">
         <h1>Jimmy Zheng</h1>
         <nav>
@@ -64,24 +68,7 @@
                 <h2>Work</h2>
             </header>
             <div class=section-line></div>
-            <div class="section-body projects">
-                <a class="project" id="portfolio" href="https://bytesizeerror.github.io/">
-                    <header class="project-name">Personal Portfolio</header>
-                </a>
-                <a class="project" id="microsoft" href="https://github.com/p10dibb/TeamMicrosoft423">
-                    <header class="project-name">Microsoft's DCCD Charitable Givings App</header>
-                </a>
-                <a class="project" id="weather" href="https://github.com/wsu-cpts489-fa20/bp-weather">
-                    <header class="project-name">WeatherBook</header>
-                </a>
-                <a class="project" id="code-refractor" href="https://bytesizeerror.github.io/Code-Refactor/">
-                    <header class="project-name">Code Refractor</header>
-                </a>
-                <div class="project" id="placeholder" href="#">
-                    <header class="project-name">Project Placeholder</header>
-                </div>
-            </div>
-
+            <div id="projects" class="section-body projects"></div>
         </section>
         <section id="contact-me">
             <header class="section-header">
@@ -90,22 +77,23 @@
             <div class=section-line></div>
             <div class="section-body contact">
                 <a class="contact-info" href="tel:425-350-1868">
-                    425-350-1868
+                    <i class="fas fa-phone fa-3x"></i><br><br>Phone
                 </a>
                 <a class="contact-info" href="mailto:jimmyz0622@gmail.com">
-                    jimmyz0622@gmail.com
+                    <i class="fas fa-envelope-open-text fa-3x"></i><br><br>Email
                 </a>
                 <a class="contact-info" href="https://www.linkedin.com/in/jimmy-zheng/">
-                    LinkedIn
+                    <i class="fab fa-linkedin-in fa-3x"></i><br><br>LinkedIn
                 </a>
                 <a class="contact-info" href="https://github.com/ByteSizeError">
-                    GitHub
+                    <i class="fab fa-github fa-3x"></i><br><br>GitHub
                 </a>
             </div>
         </section>
     </main>
     <footer>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

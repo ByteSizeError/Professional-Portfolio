@@ -1,7 +1,6 @@
 /* setting the font family for the whole page */
 * {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
+    font-family: 'Open Sans', sans-serif;}
 
 /* add padding for all sections and headers */
 h1, h2, section {
@@ -11,7 +10,7 @@ h1, h2, section {
 /* the top bar is a inline flex box that contains the header 
 and nav bar the color is set to royal blue with white text */
 #main-header {
-    background-color:royalblue;
+    background-color: #1D3557;
     color: white;
     width: 100%;
     display: inline-flex;
@@ -23,7 +22,7 @@ and nav bar the color is set to royal blue with white text */
 .header-line {
     height: 10px;
     width: 100%;
-    background-color: dodgerblue;
+    background-color: #457B9D;
 }
 
 /* setting the font size for h1 */
@@ -85,7 +84,7 @@ section {
 /* line to help sepereate the section header from the body */
 .section-line {
     width: 5px;
-    background: dodgerblue;
+    background: #52658f;
     margin-right: 15px;
 }
 
@@ -116,30 +115,6 @@ also they are dimmed until hovered on */
     position: relative;
 }
 
-/* image for porfolio */
-#portfolio {
-    background-image: url("../images/sitelogo.png");
-    background-color: lightsteelblue;
-    width: 100%;
-    height: 50vh;
-    background-size: contain;
-}
-
-/* image for microsoft project */
-#microsoft {
-    background-image: url("http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31");
-}
-
-/* image for weather book project */
-#weather {
-    background-image: url("https://media.wired.co.uk/photos/606dba1c9a15f73a597a2aa1/master/w_1600%2Cc_limit/weather.jpg");
-}
-
-/* image for refractor */
-#code-refractor {
-    background-image: url("https://chaseinternationalpartners.com/wp-content/uploads/2020/05/jobs-social-medi.jpg");
-}
-
 /* image for placeholder */
 #placeholder {
     background-image: url("https://img.freepik.com/free-vector/programming-code-icon-made-with-binary-code-coding-hacker-matrix-background-with-digits-1-0_127544-1141.jpg?size=626&ext=jpg");
@@ -148,14 +123,15 @@ also they are dimmed until hovered on */
 /* the background becomes clear when mouse hovers and has a border around it */
 .project:hover {
     opacity: 100%;
-    border-color: dodgerblue;
+    border-color: #457B9D;
 }
 
 /* the name of the project is position at the left corner of the project */
 .project-name {
     position: absolute;
     bottom: 0;
-    background-color: dodgerblue;
+    background-color: #457B9D;
+    color: white;
     border-radius: 5px;
     font-size: 15px;
     padding: 20px;
@@ -176,7 +152,7 @@ also they are dimmed until hovered on */
 
 /* the link turns blue when hovered on */
 .contact-info:hover {
-    color: dodgerblue;
+    color: #457B9D;
 }
 
 /* for screens like tablets */
@@ -211,7 +187,7 @@ also they are dimmed until hovered on */
 
     /* moving the nav bar below the header */
     nav {
-        background-color:dodgerblue;
+        background-color:#457B9D;
         width: 100%;
     }
 
