@@ -19,12 +19,27 @@ const projects = [
     {
         name: "Weather Dashboard",
         url: "https://bytesizeerror.github.io/Weather-Dashboard/",
-        bg: 'url("https://image.freepik.com/free-vector/weather-pattern_1061-487.jpg")'
+        bg: 'url("https://image.freepik.com/free-vector/meteorology-abstract-concept-vector-illustration-met-station-meteorology-program-university-degree-weather-prediction-method-measuring-instruments-atmosphere-study-abstract-metaphor_335657-1980.jpg")'
     },
     {
         name: "Code Quiz",
         url: "https://bytesizeerror.github.io/Code-Quiz/",
         bg: 'url("https://image.freepik.com/free-vector/quiz-neon-sign_1262-19629.jpg")'
+    },
+    {
+        name: "Note Taker",
+        url: "https://github.com/ByteSizeError/Note-Taker",
+        bg: 'url("https://image.freepik.com/free-vector/office-school-stationery-background_1284-58335.jpg")'
+    },
+    {
+        name: "Team Profile Generator",
+        url: "https://github.com/ByteSizeError/Team-Profile-Generator",
+        bg: 'url("https://image.freepik.com/free-vector/recruiting-professionals-studying-candidate-profiles_1262-21404.jpg")'
+    },
+    {
+        name: "Password Generator",
+        url: "https://github.com/ByteSizeError/Password-Generator",
+        bg: 'url("https://image.freepik.com/free-vector/biometric-security-concept_53876-90466.jpg")'
     },
 ];
 
