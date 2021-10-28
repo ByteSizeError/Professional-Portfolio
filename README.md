@@ -1,5 +1,5 @@
 # Professional-Portfolio
-In this project I built my own professional porfolio showcasing my projects and providing my contact information.
+In this project I built my own professional portfolio showcasing my projects and providing my contact information.
 
 ## Link to Website
 https://bytesizeerror.github.io/Professional-Portfolio/
