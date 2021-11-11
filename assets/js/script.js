@@ -2,13 +2,13 @@ let projectsEl = document.querySelector("#projects");
 
 const projects = [
     {
-        name: "Personal Command Line Interface Portfolio",
+        name: "Command Line Interface Themed Portfolio",
         repoUrl: "",
         deployUrl: "https://bytesizeerror.github.io/",
-        img: "assets/images/sitelogo.png",
+        img: "https://image.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg",
     },
     {
-        name: "Microsoft's DCCD Charitable Givings App",
+        name: "Microsoft's DCCD Charitable Givings App Prototype",
         repoUrl: "https://github.com/p10dibb/TeamMicrosoft423",
         deployUrl: "",
         img: "http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31",
@@ -42,6 +42,18 @@ const projects = [
         repoUrl: "https://github.com/ByteSizeError/Note-Taker",
         deployUrl: "https://whispering-taiga-97956.herokuapp.com/",
         img: "https://image.freepik.com/free-vector/office-school-stationery-background_1284-58335.jpg",
+    },
+    {
+        name: "E-Commerce Back End",
+        repoUrl: "https://github.com/ByteSizeError/E-Commerce-Back-End",
+        deployUrl: "",
+        img: "https://image.freepik.com/free-vector/isometric-laptop-with-shopping-cart-keypad_1262-16544.jpg",
+    },
+    {
+        name: "Employee Management System",
+        repoUrl: "https://github.com/ByteSizeError/Employee-Management-System",
+        deployUrl: "",
+        img: "https://image.freepik.com/free-vector/choosing-best-candidate-concept_52683-43377.jpg",
     },
     {
         name: "Team Profile Generator",
