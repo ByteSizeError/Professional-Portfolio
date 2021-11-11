@@ -2,7 +2,7 @@ let projectsEl = document.querySelector("#projects");
 
 const projects = [
     {
-        name: "Personal Portfolio",
+        name: "Personal Command Line Interface Portfolio",
         url: "https://bytesizeerror.github.io/",
         bg: 'url("assets/images/sitelogo.png")',
     },
