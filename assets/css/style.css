@@ -1,20 +1,23 @@
 /* setting the font family for the whole page */
 * {
-    font-family: 'Open Sans', sans-serif;}
+    font-family: "Open Sans", sans-serif;
+}
 
 /* add padding for all sections and headers */
-h1, h2, section {
+h1,
+h2,
+section {
     padding: 20px;
 }
 
 /* the top bar is a inline flex box that contains the header 
 and nav bar the color is set to royal blue with white text */
 #main-header {
-    background-color: #1D3557;
+    background-color: #0d6efd;
     color: white;
     width: 100%;
     display: inline-flex;
-    flex-flow: row wrap;   
+    flex-flow: row wrap;
     justify-content: space-between;
 }
 
@@ -22,7 +25,7 @@ and nav bar the color is set to royal blue with white text */
 .header-line {
     height: 10px;
     width: 100%;
-    background-color: #457B9D;
+    background-color: #adb5bd;
 }
 
 /* setting the font size for h1 */
@@ -33,11 +36,6 @@ h1 {
 /* setting the font size for h2 */
 h2 {
     font-size: 36px;
-}
-
-/* the nav bar will have 60% of the header */
-nav {
-    width: 60%;
 }
 
 /* the navigation links are spaced around and in a row */
@@ -57,8 +55,8 @@ nav ul li a {
 
 /* the navigation links will have overline and underline when hovered on */
 nav ul li a:hover {
-    color: lightsteelblue;
-    text-decoration: overline underline;
+    color: #000000;
+    text-decoration: none;
 }
 
 /* the paragraph will be aligned to the right and have normal line height */
@@ -84,7 +82,7 @@ section {
 /* line to help sepereate the section header from the body */
 .section-line {
     width: 5px;
-    background: #52658f;
+    background: #0d6efd;
     margin-right: 15px;
 }
 
@@ -123,14 +121,14 @@ also they are dimmed until hovered on */
 /* the background becomes clear when mouse hovers and has a border around it */
 .project:hover {
     opacity: 100%;
-    border-color: #457B9D;
+    border-color: #457b9d;
 }
 
 /* the name of the project is position at the left corner of the project */
 .project-name {
     position: absolute;
     bottom: 0;
-    background-color: #457B9D;
+    background-color: #457b9d;
     color: white;
     border-radius: 5px;
     font-size: 15px;
@@ -148,16 +146,17 @@ also they are dimmed until hovered on */
 .contact-info {
     font-size: 16px;
     margin: 40px 10px;
+    color: #adb5bd;
+    text-decoration: none;
 }
 
 /* the link turns blue when hovered on */
 .contact-info:hover {
-    color: #457B9D;
+    color: #0d6efd;
 }
 
 /* for screens like tablets */
 @media screen and (max-width: 1024px) {
-    
     /* project will now have a whole row to themselves */
     .project {
         width: 100%;
@@ -165,7 +164,7 @@ also they are dimmed until hovered on */
 
     /* giving it the whole length of the page */
     #main-header {
-        width: 100%; 
+        width: 100%;
         justify-content: space-around;
     }
 
@@ -179,7 +178,7 @@ also they are dimmed until hovered on */
         width: 100%;
         text-align: center;
     }
-    
+
     /* shrinking the font size */
     h2 {
         font-size: 30px;
@@ -187,7 +186,7 @@ also they are dimmed until hovered on */
 
     /* moving the nav bar below the header */
     nav {
-        background-color:#457B9D;
+        background-color: #adb5bd;
         width: 100%;
     }
 
@@ -247,4 +246,10 @@ also they are dimmed until hovered on */
     .contact-info {
         margin: 10px;
     }
+}
+
+.card-img-top {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
 }

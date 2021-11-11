@@ -3,71 +3,110 @@ let projectsEl = document.querySelector("#projects");
 const projects = [
     {
         name: "Personal Command Line Interface Portfolio",
-        url: "https://bytesizeerror.github.io/",
-        bg: 'url("assets/images/sitelogo.png")',
+        repoUrl: "",
+        deployUrl: "https://bytesizeerror.github.io/",
+        img: "assets/images/sitelogo.png",
     },
     {
         name: "Microsoft's DCCD Charitable Givings App",
-        url: "https://github.com/p10dibb/TeamMicrosoft423",
-        bg: 'url("http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31")',
+        repoUrl: "https://github.com/p10dibb/TeamMicrosoft423",
+        deployUrl: "",
+        img: "http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31",
     },
     {
         name: "Music Trivia",
-        url: "https://github.com/ByteSizeError/Tech-Blog",
-        bg: 'url("https://image.freepik.com/free-vector/colorful-sound-wave-equalizer_53876-63961.jpg")',
+        repoUrl: "https://github.com/BCole37/Project-1-Music-Trivia",
+        deployUrl: "https://bcole37.github.io/Project-1-Music-Trivia/",
+        img: "https://image.freepik.com/free-vector/colorful-sound-wave-equalizer_53876-63961.jpg",
     },
     {
         name: "The Tech Blog",
-        url: "https://bcole37.github.io/Project-1-Music-Trivia/",
-        bg: 'url("https://image.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg")',
+        repoUrl: "https://github.com/ByteSizeError/Tech-Blog",
+        deployUrl: "https://glacial-ridge-40516.herokuapp.com/",
+        img: "https://image.freepik.com/free-vector/organic-flat-blog-post-illustration-with-people_23-2148955260.jpg",
     },
     {
         name: "Weather Dashboard",
-        url: "https://bytesizeerror.github.io/Weather-Dashboard/",
-        bg: 'url("https://image.freepik.com/free-vector/meteorology-abstract-concept-vector-illustration-met-station-meteorology-program-university-degree-weather-prediction-method-measuring-instruments-atmosphere-study-abstract-metaphor_335657-1980.jpg")',
+        repoUrl: "https://github.com/ByteSizeError/Weather-Dashboard",
+        deployUrl: "https://bytesizeerror.github.io/Weather-Dashboard/",
+        img: "https://image.freepik.com/free-vector/meteorology-abstract-concept-vector-illustration-met-station-meteorology-program-university-degree-weather-prediction-method-measuring-instruments-atmosphere-study-abstract-metaphor_335657-1980.jpg",
     },
     {
         name: "Code Quiz",
-        url: "https://bytesizeerror.github.io/Code-Quiz/",
-        bg: 'url("https://image.freepik.com/free-vector/quiz-neon-sign_1262-19629.jpg")',
+        repoUrl: "https://github.com/ByteSizeError/Code-Quiz",
+        deployUrl: "https://bytesizeerror.github.io/Code-Quiz/",
+        img: "https://image.freepik.com/free-vector/quiz-neon-sign_1262-19629.jpg",
     },
     {
         name: "Note Taker",
-        url: "https://github.com/ByteSizeError/Note-Taker",
-        bg: 'url("https://image.freepik.com/free-vector/office-school-stationery-background_1284-58335.jpg")',
+        repoUrl: "https://github.com/ByteSizeError/Note-Taker",
+        deployUrl: "https://whispering-taiga-97956.herokuapp.com/",
+        img: "https://image.freepik.com/free-vector/office-school-stationery-background_1284-58335.jpg",
     },
     {
         name: "Team Profile Generator",
-        url: "https://github.com/ByteSizeError/Team-Profile-Generator",
-        bg: 'url("https://image.freepik.com/free-vector/recruiting-professionals-studying-candidate-profiles_1262-21404.jpg")',
+        repoUrl: "https://github.com/ByteSizeError/Team-Profile-Generator",
+        deployUrl: "",
+        img: "https://image.freepik.com/free-vector/recruiting-professionals-studying-candidate-profiles_1262-21404.jpg",
     },
     {
         name: "Password Generator",
-        url: "https://github.com/ByteSizeError/Password-Generator",
-        bg: 'url("https://image.freepik.com/free-vector/biometric-security-concept_53876-90466.jpg")',
+        repoUrl: "https://github.com/ByteSizeError/Password-Generator",
+        deployUrl: "https://bytesizeerror.github.io/Password-Generator/",
+        img: "https://image.freepik.com/free-vector/biometric-security-concept_53876-90466.jpg",
     },
 ];
 
 const loadProjects = () => {
     for (let i = 0; i < projects.length; i++) {
-        let projectEl = document.createElement("a");
-        projectEl.classList.add("project");
-        projectEl.href = projects[i].url;
-        projectEl.target = "_blank";
-        projectEl.style.backgroundImage = projects[i].bg;
+        let colEl = document.createElement("div");
+        colEl.classList.add("col");
 
-        if (i === 0) {
-            projectEl.style.backgroundColor = "#D7DEDC";
-            projectEl.style.width = "100%";
-            projectEl.style.height = "50vh";
-            projectEl.style.backgroundSize = "contain";
+        let cardEl = document.createElement("div");
+        cardEl.classList.add("card");
+
+        let imgEl = document.createElement("img");
+        imgEl.src = projects[i].img;
+        imgEl.classList.add("card-img-top");
+
+        let cardBodyEl = document.createElement("div");
+        cardBodyEl.classList.add("card-body");
+
+        let titleEl = document.createElement("h5");
+        titleEl.classList.add("card-title");
+        titleEl.innerHTML = projects[i].name;
+
+        let cardFooterEl = document.createElement("div");
+        cardFooterEl.classList.add("card-footer");
+        cardFooterEl.classList.add("bg-white");
+
+        let btnGroupEl = document.createElement("div");
+        btnGroupEl.classList.add("btn-group");
+
+        if (projects[i].repoUrl != "") {
+            let repoBtnEl = document.createElement("a");
+            let cls = ["btn", "btn-outline-primary"];
+            repoBtnEl.classList.add(...cls);
+            repoBtnEl.href = projects[i].repoUrl;
+            repoBtnEl.target = "_blank";
+            repoBtnEl.innerHTML = '<i class="fab fa-github"></i> Repository';
+            btnGroupEl.append(repoBtnEl);
         }
 
-        let headerEl = document.createElement("header");
-        headerEl.textContent = projects[i].name;
-        headerEl.classList.add("project-name");
-
-        projectEl.append(headerEl);
-        projectsEl.append(projectEl);
+        if (projects[i].deployUrl != "") {
+            let deployBtnEl = document.createElement("a");
+            let cls = ["btn", "btn-outline-primary"];
+            deployBtnEl.classList.add(...cls);
+            deployBtnEl.href = projects[i].deployUrl;
+            deployBtnEl.target = "_blank";
+            deployBtnEl.innerHTML =
+                '<i class="fas fa-globe"></i> Deployed Link ';
+            btnGroupEl.append(deployBtnEl);
+        }
+        cardFooterEl.append(btnGroupEl);
+        cardBodyEl.append(titleEl);
+        cardEl.append(imgEl, cardBodyEl, cardFooterEl);
+        colEl.append(cardEl);
+        projectsEl.append(colEl);
     }
 };
