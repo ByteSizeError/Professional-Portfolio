@@ -93,7 +93,8 @@ const loadProjects = () => {
         cardFooterEl.classList.add("bg-white");
 
         let btnGroupEl = document.createElement("div");
-        btnGroupEl.classList.add("btn-group");
+        btnGroupEl.classList.add("d-flex");
+        btnGroupEl.classList.add("justify-content-evenly");
 
         if (projects[i].repoUrl != "") {
             let repoBtnEl = document.createElement("a");
