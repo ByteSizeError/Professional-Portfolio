@@ -14,10 +14,10 @@ const projects = [
         img: "http://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE4OAgf?ver=6a31",
     },
     {
-        name: "Music Trivia",
-        repoUrl: "https://github.com/BCole37/Project-1-Music-Trivia",
-        deployUrl: "https://bcole37.github.io/Project-1-Music-Trivia/",
-        img: "https://image.freepik.com/free-vector/colorful-sound-wave-equalizer_53876-63961.jpg",
+        name: "Music Trivia 2.0",
+        repoUrl: "https://github.com/ChonaC/Project-2-MUSICTRIVIA",
+        deployUrl: "https://protected-falls-91774.herokuapp.com/",
+        img: "https://i.postimg.cc/SQMSzcHD/music-trivia-logo.png",
     },
     {
         name: "The Tech Blog",
