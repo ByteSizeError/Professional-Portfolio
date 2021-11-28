@@ -1,111 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            property="og:title"
+            content="Jimmy Zheng's Professional Portfolio"
+        />
+        <meta property="og:image" content="assets/images/sitelogo.png" />
+        <title>Professional Portfolio</title>
+        <link rel="icon" href="assets/images/sitelogo.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+            integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta property="og:title" content="Jimmy Zheng's Professional Portfolio">
-        <meta property="og:image" content="assets/images/sitelogo.png">
-    <title>Professional Portfolio</title>
-    <link rel="icon" href="assets/images/sitelogo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/reset.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-</head>
-
-<body onload="loadProjects()">
-
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/sitelogo.png" alt="" width="40" height="40" class="d-inline-block">
-                Jimmy Zheng
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse text-center" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#about-me">About Me</a>
-                    <a class="nav-link" href="#work">Projects</a>
-                    <a class="nav-link" href="#contact-me">Contact Me</a>
-                    <a class="nav-link" href="assets/Jimmy-Zheng-Resume.pdf" target="_blank">Resume</a>
+    <body onload="loadProjects()">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img
+                        src="assets/images/sitelogo.png"
+                        alt=""
+                        width="40"
+                        height="40"
+                        class="d-inline-block"
+                    />
+                    Jimmy Zheng
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse text-center"
+                    id="navbarNavAltMarkup"
+                >
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#about-me">About Me</a>
+                        <a class="nav-link" href="#work">Projects</a>
+                        <a class="nav-link" href="#contact-me">Contact Me</a>
+                        <a
+                            class="nav-link"
+                            href="assets/Jimmy-Zheng-Resume.pdf"
+                            target="_blank"
+                            >Resume</a
+                        >
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <main>
-        <section id="about-me">
-            <header class="section-header">
-                <h2>About Me</h2>
-            </header>
-            <div class=section-line></div>
-            <div class="section-body ms-3">
-                <p>
-                    Ambitious Full Stack Web Developer with strengths in meeting deadlines, creativity, and
-                    organization. Recently graduated from Washington State University with a degree in Computer Science
-                    and am currently pursuing a Certificate in Full Stack Development from the University of Washington
-                    to hone my skills.
-                </p>
-                <p>
-                    Throughout college, I worked hard, remained organized to ensure that I met all my deadlines. I
-                    relied heavily on my time management skills and stayed calm when under pressure. Ultimately, it paid
-                    off. I completed my bachelor's and graduated with honors. In college from my numerous team projects
-                    I learned the importance of teamwork and communication. The whole process showed me the benefits of
-                    hard work, teamwork, and dedication with the rewards that followed.
-                </p>
-                <p>
-                    Known for being an adaptive problem solver excited on developing apps. Passionate about tackling
-                    problems from different angles and breaking problems down piece by piece. In each project, my goal
-                    is to create an impactful user experience with responsive web applications by leveraging my skills.
-                </p>
-            </div>
-
-        </section>
-        <section id="work">
-            <header class="section-header">
-                <h2>Projects</h2>
-            </header>
-            <div class=section-line></div>
-            <div id="projects" class="section-body projects row row-cols-1 row-cols-lg-2 g-4 ms-1 me-1"></div>
-        </section>
-        <section id="contact-me">
-            <header class="section-header">
-                <h2>Contact Me</h2>
-            </header>
-            <div class=section-line></div>
-            <div class="section-body contact">
-                <a class="contact-info" href="tel:425-350-1868">
-                    <i class="fas fa-phone fa-2x"></i><br>Phone
-                </a>
-                <a class="contact-info" href="mailto:jimmyz0622@gmail.com">
-                    <i class="fas fa-envelope-open-text fa-2x"></i><br>Email
-                </a>
-                <a class="contact-info" href="https://www.linkedin.com/in/jimmy-zheng/">
-                    <i class="fab fa-linkedin-in fa-2x"></i><br>LinkedIn
-                </a>
-                <a class="contact-info" href="https://github.com/ByteSizeError">
-                    <i class="fab fa-github fa-2x"></i><br>GitHub
-                </a>
-            </div>
-        </section>
-    </main>
-    <footer>
-    </footer>
-    <script src="assets/js/script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-</body>
-
+        <main>
+            <section id="about-me">
+                <header class="section-header">
+                    <h2>About Me</h2>
+                </header>
+                <div class="section-line"></div>
+                <div class="section-body ms-3">
+                    <p>
+                        Full Stack Developer experienced in making iOS and web
+                        applications with strengths in meeting deadlines,
+                        creativity, organization, and problem solving. Graduated
+                        from Washington State University with a degree in
+                        Computer Science and am currently pursuing a Certificate
+                        in Full Stack Development from the University of
+                        Washington.
+                    </p>
+                    <p>
+                        Throughout my time at Washington State University, I
+                        worked hard, remained organized to ensure that I met all
+                        my deadlines. I relied heavily on my time management
+                        skills and stayed calm when under pressure. Ultimately,
+                        it paid off. I completed my bachelor's degree and
+                        graduated <i>magna cum laude</i>. From my numerous team
+                        projects I learned the importance of teamwork and
+                        communication. The whole process showed me the benefits
+                        of hard work, teamwork, and dedication with the rewards
+                        that followed.
+                    </p>
+                    <p>
+                        Known for being an adaptive problem solver excited on
+                        developing apps. Passionate about tackling problems from
+                        different angles and breaking problems down piece by
+                        piece. In each project, my goal is to create an
+                        impactful user experience with responsive 
+                        applications by leveraging my skills. 
+                    </p>
+                </div>
+            </section>
+            <section id="work">
+                <header class="section-header">
+                    <h2>Projects</h2>
+                </header>
+                <div class="section-line"></div>
+                <div
+                    id="projects"
+                    class="
+                        section-body
+                        projects
+                        row row-cols-1 row-cols-lg-2
+                        g-4
+                        ms-1
+                        me-1
+                    "
+                ></div>
+            </section>
+            <section id="contact-me">
+                <header class="section-header">
+                    <h2>Contact Me</h2>
+                </header>
+                <div class="section-line"></div>
+                <div class="section-body contact">
+                    <a class="contact-info" href="tel:425-350-1868">
+                        <i class="fas fa-phone fa-2x"></i><br />Phone
+                    </a>
+                    <a class="contact-info" href="mailto:jimmyz0622@gmail.com">
+                        <i class="fas fa-envelope-open-text fa-2x"></i
+                        ><br />Email
+                    </a>
+                    <a
+                        class="contact-info"
+                        href="https://www.linkedin.com/in/jimmy-zheng/"
+                    >
+                        <i class="fab fa-linkedin-in fa-2x"></i><br />LinkedIn
+                    </a>
+                    <a
+                        class="contact-info"
+                        href="https://github.com/ByteSizeError"
+                    >
+                        <i class="fab fa-github fa-2x"></i><br />GitHub
+                    </a>
+                </div>
+            </section>
+        </main>
+        <footer></footer>
+        <script src="assets/js/script.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
 </html>
